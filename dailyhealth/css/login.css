@@ -1,0 +1,37 @@
+
+body{
+  background-image: linear-gradient(to right, #8f2a2a, #ff0000);
+}
+
+.row{
+  background-color: #ffffff;
+  padding: 1%;
+  margin: 2%%;
+  margin-top: 10%;
+  margin-bottom: 2%;
+  margin-left: 25%;
+  width: 50%;
+  font-size: 115%;
+}
+label{
+  display: inline-block;
+  width: 90%;
+}
+input{
+  display: inline-block;
+  width: 100%;
+  padding: 1%;
+  margin: 1%;
+}
+span{
+  margin: 1%;
+  margin-top: 2%;
+}
+.form-control{
+  width: 100%;
+}
+select{
+  height: 30px;
+  padding: 1%;
+  margin: 1%;
+}

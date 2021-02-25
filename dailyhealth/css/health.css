@@ -1,0 +1,148 @@
+.box{
+  display: inline-block;
+  padding: 1%;
+  margin: 1%;
+  position: relative;
+}
+.health .box{
+  display: inline-block;
+  padding: 1%;
+  margin: 1%;
+  width: 25%;
+}
+
+#fixa, #fixb, #fixc, #fixd, #fixe, #fixf, #fixg, #fixh{
+  padding: 1%;
+  display: inline-block;
+  width: 300px;
+  margin: 1%;
+}
+.done button{
+  background-color: red;
+  color: #ffffff;
+  width: 100%;
+  font-weight: bold;
+  padding: 1%;
+  font-size: 20px;
+}
+.notdone button{
+  background-color: green;
+  color: #ffffff;
+  width: 100%;
+  font-weight: bold;
+  padding: 1%;
+  font-size: 20px;
+}
+
+#nfixa, #nfixb, #nfixc, #nfixd, #nfixe, #nfixf, #nfixg, #nfixh{
+  padding: 1%;
+  display: inline-block;
+  width: 300px;
+  margin: 1%;
+}
+.health .box:hover{
+  width:26%;
+  padding: 1%;
+  margin: 1%;
+}
+.health{
+  padding:1%;
+  margin: 1%;
+}
+.pic img{
+  width: 300px;;
+  height: auto;
+}
+p{
+  padding: 1%;
+}
+.title h2{
+  text-align: center;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 15px solid #8f2a2a;
+  border-radius: 20px;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.closea, .closeb, .closec, .closed, .closee, .closef {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closea:hover,
+.closea:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.closeb:hover,
+.closeb:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.closec:hover,
+.closec:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.closed:hover,
+.closed:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.closee:hover,
+.closee:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.closef:hover,
+.closef:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.health ul li{
+  background-color: #fefefe;
+  list-style-type: circle;
+  font-size: 150%;
+  font-style: oblique;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.app{
+  width:40%;
+  display: inline-block;
+}
+.app label,input{
+  width:40%;
+  font-size: 20px;
+}
+.body{
+  margin:2%;
+}
