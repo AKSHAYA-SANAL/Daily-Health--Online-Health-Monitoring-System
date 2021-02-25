@@ -1,7 +1,6 @@
 #include <ESP8266WebServer.h>
-const char* ssid = "JioFi_10578C8"; // ssid
-const char* password = "bi5jcox8pz"; // password
-                          // Variable to store the value coming from the sensor
+const char* ssid = "Name"; // ssid
+const char* password = "****"; // password
 
 int count = 0;
 unsigned long starttime = 0;
@@ -13,7 +12,7 @@ int readD1, readD2;
 
 ESP8266WebServer server(80);  
 void setup () {
-  Serial.begin (115200);  // Start Serial Communication @ 9600
+  Serial.begin (115200);  // Start Serial Communication @ 115200
   pinMode(Pin_D1, OUTPUT);
   pinMode(Pin_D2, OUTPUT);
   WiFi.begin(ssid, password);     //Connect to your WiFi router
@@ -40,7 +39,7 @@ void setup () {
   Serial.println("HTTP server started");
 
 }
-int temp(){
+int temp(){   // Return temperature
   digitalWrite(Pin_D1, HIGH); // Turn D1 On
   digitalWrite(Pin_D2, LOW); // Turn D2 Off
   float vref = 3.3;
@@ -51,7 +50,7 @@ int temp(){
   return temp ; 
 }
 
-int bpm(){
+int bpm(){    //Return PulseRate
     digitalWrite(Pin_D1, LOW); //  Turn D1 On
     digitalWrite(Pin_D2, HIGH); // Turn D2 Off
     starttime = millis();
@@ -85,12 +84,12 @@ void loop (){
     server.handleClient();
   }
  void handle_OnConnect() {
-  readD1 = temp();
+    readD1 = temp();
     delay(6*1000);
     readD2 = bpm();
     BPM = readD2;
     temperature = readD1;
-  server.send(200, "text/html", SendHTML(BPM,temperature)); 
+    server.send(200, "text/html", SendHTML(BPM,temperature)); 
 }
 
 void handle_NotFound(){
